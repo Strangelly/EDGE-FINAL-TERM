@@ -1,0 +1,16 @@
+<!-- templates/add_book.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Task</title>
+</head>
+<body>
+    <h1>Add a New Task</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Display form fields with paragraph tags -->
+        <button type="submit">Save Task</button>
+    </form>
+</body>
+</html>
